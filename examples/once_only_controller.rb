@@ -6,10 +6,10 @@ test do
     think_time 5000, 5000
 
     Once do
-      post name: 'Home Page', url: 'https://flooded.io/api/oauth'
+      post name: 'Home Page', url: 'https://google.com/api/oauth'
     end
 
-    visit name: 'Home Page', url: 'https://flooded.io/'
+    visit name: 'Home Page', url: 'https://google.com/'
 
   end
 end.run(path: '/usr/share/jmeter/bin/', gui: true)

@@ -3,7 +3,7 @@ require 'ruby-jmeter'
 
 test do
   threads count: 1 do
-    visit name: 'Home', url: 'https://flooded.io'
+    visit name: 'Home', url: 'https://google.com'
   end
 end.flood ENV['FLOOD_API_TOKEN'],
   privacy: 'public',

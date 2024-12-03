@@ -5,7 +5,7 @@ describe 'http_request' do
     let(:doc) do
       test do
         threads count: 1 do
-          get name: 'Home Page', url: 'https://flooded.io/'
+          get name: 'Home Page', url: 'https://google.com/'
         end
       end.to_doc
     end
@@ -17,7 +17,7 @@ describe 'http_request' do
     end
 
     it 'matches on domain' do
-      expect(fragment.search(".//stringProp[@name='HTTPSampler.domain']").text).to eq 'flooded.io'
+      expect(fragment.search(".//stringProp[@name='HTTPSampler.domain']").text).to eq 'google.com'
     end
 
     it 'matches on port' do
@@ -37,7 +37,7 @@ describe 'http_request' do
     let(:doc) do
       test do
         threads count: 1 do
-          get name: 'Home Page', url: 'https://flooded.io/', follow_redirects: false, use_keepalive: false
+          get name: 'Home Page', url: 'https://google.com/', follow_redirects: false, use_keepalive: false
         end
       end.to_doc
     end
@@ -57,7 +57,7 @@ describe 'http_request' do
     let(:doc) do
       test do
         threads count: 1 do
-          visit name: 'Home Page', url: 'https://flooded.io/'
+          visit name: 'Home Page', url: 'https://google.com/'
         end
       end.to_doc
     end
@@ -149,7 +149,7 @@ describe 'http_request' do
     let(:doc) do
       test do
         threads count: 1 do
-          post name: 'Home Page', url: 'https://flooded.io/'
+          post name: 'Home Page', url: 'https://google.com/'
         end
       end.to_doc
     end
@@ -199,7 +199,7 @@ describe 'http_request' do
     let(:doc) do
       test do
         threads count: 1 do
-          submit name: 'Home Page', url: 'https://flooded.io/'
+          submit name: 'Home Page', url: 'https://google.com/'
         end
       end.to_doc
     end
@@ -259,7 +259,7 @@ describe 'http_request' do
     let(:doc) do
       test do
         threads count: 1 do
-          patch name: 'Home Page', url: 'https://flooded.io/'
+          patch name: 'Home Page', url: 'https://google.com/'
         end
       end.to_doc
     end
@@ -275,7 +275,7 @@ describe 'http_request' do
     let(:doc) do
       test do
         threads count: 1 do
-          head name: 'Home Page', url: 'https://flooded.io/'
+          head name: 'Home Page', url: 'https://google.com/'
         end
       end.to_doc
     end
@@ -291,7 +291,7 @@ describe 'http_request' do
     let(:doc) do
       test do
         threads count: 1 do
-          put name: 'Home Page', url: 'https://flooded.io/'
+          put name: 'Home Page', url: 'https://google.com/'
         end
       end.to_doc
     end

@@ -4,7 +4,7 @@ require 'ruby-jmeter'
 test do
   threads count: 1 do
     loops count:10 do
-      visit name: 'Home Page', url: 'https://flooded.io/'
+      visit name: 'Home Page', url: 'https://google.com/'
     end
   end
 end.run(path: '/usr/share/jmeter/bin/', gui: true)

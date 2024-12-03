@@ -11,11 +11,11 @@ test do
   with_user_agent :iphone
 
   threads count: 1 do
-    visit name: 'Home Page', url: 'https://flooded.io/'
+    visit name: 'Home Page', url: 'https://google.com/'
   end
 
   transaction name: 'Home via XHR' do
-    visit name: 'Home Page', url: 'https://flooded.io/' do
+    visit name: 'Home Page', url: 'https://google.com/' do
       with_xhr
     end
   end

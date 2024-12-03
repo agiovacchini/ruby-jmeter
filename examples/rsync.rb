@@ -3,7 +3,7 @@ require 'ruby-jmeter'
 
 test do
   threads count: 10 do
-    visit name: 'Home Page', url: 'https://flooded.io'
+    visit name: 'Home Page', url: 'https://google.com'
   end
 end.rsync(
   remote_host: 'xxx.xxx.xxx.xxx',

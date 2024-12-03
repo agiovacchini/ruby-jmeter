@@ -5,7 +5,7 @@ test do
   cookies clear_each_iteration: false
   threads count: 5, rampup: 10 do
     transaction name: 'Google Search' do
-      visit name: 'Home Page', url: 'https://flooded.io/'
+      visit name: 'Home Page', url: 'https://google.com/'
     end
   end
 

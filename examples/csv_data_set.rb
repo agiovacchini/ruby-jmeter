@@ -6,7 +6,7 @@ test do
     variableNames: 'postcode'
 
   threads count: 1 do
-    visit name: 'Home', url: 'https://flooded.io?query=${postcode}'
+    visit name: 'Home', url: 'https://google.com?query=${postcode}'
   end
 end.flood ENV['FLOOD_API_TOKEN'],
   privacy: 'public',
